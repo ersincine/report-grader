@@ -1,0 +1,137 @@
+{
+  "prefix": "",
+  "suffix": "_v2",
+  "command": "xdg-open",
+  "grading": {
+    "everyone": 0,
+    "minimum": 1,
+    "format": {
+      "reward": 0.25,
+      "penalty": 0
+    },
+    "naming": {
+      "reward": 0.25,
+      "penalty": 0
+    },
+    "features": [
+      [
+        [
+          "overall",
+          "Rapor genel olarak özenli mi ve istendiği gibi 1 sayfaya sığmış mı?",
+          [
+            0.25,
+            0
+          ],
+          [
+            "1 sayfa ve özenli",
+            "1'den fazla sayfa veya çok özensiz"
+          ]
+        ],
+        [
+          "language",
+          "Kullanılan dil anlaşılır mı?",
+          [
+            0.25,
+            0
+          ],
+          [
+            "Kolaylıkla anlaşılır",
+            "Anlaşılması güç veya çok hatalı"
+          ]
+        ]
+      ],
+      [
+        [
+          "Q1_concepts",
+          "Key concepts",
+          [
+            0.25,
+            0.15,
+            0
+          ],
+          [
+            "Yeterli",
+            "Yetersiz",
+            "Cevap yok"
+          ]
+        ],
+        [
+          "Q1_attraction",
+          "Which one attracted you and why?",
+          [
+            0.25,
+            0.15,
+            0
+          ],
+          [
+            "Yeterli",
+            "Yetersiz",
+            "Cevap yok"
+          ]
+        ]
+      ],
+      [
+        [
+          "Q2_relationship",
+          "Relationship between your favorite topic(s) and these topics",
+          [
+            0.5,
+            0.25,
+            0
+          ],
+          [
+            "Yeterli",
+            "Yetersiz",
+            "Cevap yok"
+          ]
+        ]
+      ],
+      [
+        [
+          "Q3_like",
+          "What did you like/dislike?",
+          [
+            0.5,
+            0.25,
+            0
+          ],
+          [
+            "Yeterli",
+            "Yetersiz",
+            "Cevap yok"
+          ]
+        ]
+      ],
+      [
+        [
+          "Q4_question",
+          "Your question",
+          [
+            0.25,
+            0.15,
+            0
+          ],
+          [
+            "Yeterli",
+            "Yetersiz",
+            "Cevap yok"
+          ]
+        ],
+        [
+          "Q4_why",
+          "Why this question?",
+          [
+            0.25,
+            0.15,
+            0
+          ],
+          [
+            "Yeterli",
+            "Yetersiz",
+            "Cevap yok"
+          ]
+        ]
+      ]
+    ]
+  }
+}
