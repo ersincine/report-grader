@@ -1,5 +1,6 @@
 """
-1) Yüklenen raporları indir ve sıkıştırılmış dosyayı çıkart.
+1) Yüklenen PDF raporlarını (ödev, sınav vb.) indir ve sıkıştırılmış dosyayı çıkart.
+Her öğrencinin kendisine ait bir dizini ve içinde raporu olmalı.
 
 2) Bu dosyayı ve config.js dosyasını rapor dizininin içine koy ve config.js dosyasını değiştir.
 

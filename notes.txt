@@ -1,12 +1,4 @@
-# Rapor yerine sınav da olabilir.
-# Yazılı ödev de olabilir.
-# PDF yerine py, cpp gibi uzantılı kodlar da olabilir. (Kodun değerlendirilmesi?)
+TODO
+Sınıf listesini verebilelim, olmayan öğrencileri 0 veya boşluk olarak girsin.
+PDF yerine py, cpp gibi uzantılı kodlar da olabilir aslında. Belki bu özelliği ekleyebilirim.
 
-# Öğrenci listesini verebilelim. Olmayanları 0 veya - şeklinde girer (veya boş bırakır).
-
-
-Homework and exam evaluator
-
-
-Notlandırma kriteri (daha doğrusu verdiğimiz puan) sonradan değişirse notların otomatik olarak değişmesini istiyorsak notları değil şıkları falan tutmamız lazım
-ama biraz zor.
