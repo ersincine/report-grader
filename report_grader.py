@@ -4,18 +4,19 @@
 2) Bu dosyayı ve config.js dosyasını rapor dizininin içine koy ve config.js dosyasını değiştir.
 
 prefix ve suffix
-- studentno_v2.pdf için prefix="", suffix="_v2" olur.
+- studentno_hw1.pdf için prefix="", suffix="_hw1" olur.
 - ceng311_studentno_hw1.pdf için prefix="ceng311_", suffix="_hw1" olur.
-- Büyük-küçük harf ayrımıyla ilgili bir hata varsa bu hata görmezden gelinir.
+- Büyük-küçük harf ayrımıyla ilgili bir hata varsa bu hata görmezden gelinecek.
 
 command
 - PDF açmak için terminal komutu. Ubuntu'da bu programı kullanıyorum. Değiştirilebilir.
 
 grading
+- Puanlar tamsayı olmak zorunda değil.
 - everyone
 -- Rapor yükleyen herkese verilecek puan. (Böyle bir puan verilmeyecekse 0.)
 - minimum
--- Bütün notlandırmalar bittikten sonra toplam bundan daha düşükse bu değer kullanılır. (Mesela 0'dan daha düşük bir not alınmasın isteniyorsa 0.)
+-- Bütün notlandırmalar bittikten sonra toplam bundan daha düşükse bu not verilir. (Mesela 0'dan daha düşük bir not alınmasın isteniyorsa 0.)
 -- minimum ile everyone farklı şeyler. grade = max((everyone + diğer notlandırmalar), minimum)
 - format
 -- Kişi PDF yüklemiş mi? (Yoksa DOCX falan mı yüklemiş?) İlk sayı PDF yüklediyse kazanacağı puan, ikinci sayı PDF yüklemediyse kaybedeceği puan.
@@ -23,7 +24,7 @@ grading
 -- Eğer hiç PDF yüklememiş veya 1'den fazla PDF yüklemiş öğrenciler var ise program çıktılarla sizi yönlendirecek.
 - naming
 -- Kişi PDF'in adlandırmasını doğru şekilde yapmış mı? (evetse_kazanacağı_puan, hayırsa_kaybedeceği_puan)
--- Eğer PDF yüklenmediyse otomatik olarak yanlış sayılır.
+-- Eğer PDF yüklenmediyse isimlendirme otomatik olarak yanlış sayılır.
 - features
 -- Rapordan rapora değişen asıl notlandırılacak kısım.
 -- Burası tamamen değiştirilebilir.
@@ -94,7 +95,7 @@ def check_report_formats(submission_dirs):
 
 def check_student_nos(submission_dirs):
     def is_valid_student_no(s):
-        return len(s) == 9 and s.isdigit()
+        return len(s) == STUDENT_NO_LENGTH and s.isdigit()
 
     def get_student_no(pdf_report_name):
         pdf_report_name = pdf_report_name.lower()
@@ -265,7 +266,7 @@ def csv_stuff(student_nos, format_grades, naming_grades):
 
 
 def main():
-    submission_dirs = sorted([file for file in os.listdir() if os.path.isdir(file) and file not in ("venv", ".idea")])  # PyCharm için sadece.
+    submission_dirs = sorted([file for file in os.listdir() if os.path.isdir(file) and file != "venv" and not file.startswith(".")])  # PyCharm için sadece.
     num_students = check_submissions(submission_dirs)
     report_paths, format_grades = check_report_formats(submission_dirs)
     student_nos, naming_grades = check_student_nos(submission_dirs)
@@ -319,6 +320,9 @@ if __name__ == "__main__":
     # paths
     CONFIG_PATH = "config.json"
     ORIGINAL_CSV_PATH = "grades.csv"
+
+    # student no
+    STUDENT_NO_LENGTH = 9  # Each student has a number with this many digits
 
     # colors
     GREEN = "\033[92m"

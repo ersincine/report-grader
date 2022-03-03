@@ -1,16 +1,16 @@
 {
   "prefix": "",
-  "suffix": "_v2",
+  "suffix": "_hw1",
   "command": "xdg-open",
   "grading": {
-    "everyone": 0,
-    "minimum": 1,
+    "everyone": 10,
+    "minimum": 10,
     "format": {
-      "reward": 0.25,
-      "penalty": 0
+      "reward": 0,
+      "penalty": 10
     },
     "naming": {
-      "reward": 0.25,
+      "reward": 10,
       "penalty": 0
     },
     "features": [
@@ -19,7 +19,7 @@
           "overall",
           "Rapor genel olarak özenli mi ve istendiği gibi 1 sayfaya sığmış mı?",
           [
-            0.25,
+            5,
             0
           ],
           [
@@ -31,7 +31,7 @@
           "language",
           "Kullanılan dil anlaşılır mı?",
           [
-            0.25,
+            5,
             0
           ],
           [
@@ -42,11 +42,11 @@
       ],
       [
         [
-          "Q1_concepts",
-          "Key concepts",
+          "Q1a",
+          "Sorunun metni veya özeti burada",
           [
-            0.25,
-            0.15,
+            10,
+            5,
             0
           ],
           [
@@ -56,11 +56,45 @@
           ]
         ],
         [
-          "Q1_attraction",
-          "Which one attracted you and why?",
+          "Q1b",
+          "Sorunun metni veya özeti burada",
           [
-            0.25,
-            0.15,
+            10,
+            6,
+            3,
+            0
+          ],
+          [
+            "Adımlar ve sonuç doğru",
+            "Adımlar doğru ama sonuç yanlış",
+            "Adımlar kabaca doğru",
+            "Cevap yok veya alakasız"
+          ]
+        ]
+      ],
+      [
+        [
+          "Q2",
+          "Sorunun metni veya özeti burada",
+          [
+            10,
+            5,
+            0
+          ],
+          [
+            "Cevap doğru, açıklama da yeterli",
+            "Cevap doğru ama açıklama yetersiz",
+            "Cevap yok veya yanlış"
+          ]
+        ]
+      ],
+      [
+        [
+          "Q3",
+          "Sorunun metni veya özeti burada",
+          [
+            20,
+            10,
             0
           ],
           [
@@ -72,43 +106,11 @@
       ],
       [
         [
-          "Q2_relationship",
-          "Relationship between your favorite topic(s) and these topics",
+          "Q4a",
+          "Sorunun metni veya özeti burada",
           [
-            0.5,
-            0.25,
-            0
-          ],
-          [
-            "Yeterli",
-            "Yetersiz",
-            "Cevap yok"
-          ]
-        ]
-      ],
-      [
-        [
-          "Q3_like",
-          "What did you like/dislike?",
-          [
-            0.5,
-            0.25,
-            0
-          ],
-          [
-            "Yeterli",
-            "Yetersiz",
-            "Cevap yok"
-          ]
-        ]
-      ],
-      [
-        [
-          "Q4_question",
-          "Your question",
-          [
-            0.25,
-            0.15,
+            10,
+            5,
             0
           ],
           [
@@ -118,11 +120,11 @@
           ]
         ],
         [
-          "Q4_why",
-          "Why this question?",
+          "Q4b",
+          "Sorunun metni veya özeti burada",
           [
-            0.25,
-            0.15,
+            10,
+            5,
             0
           ],
           [
